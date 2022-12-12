@@ -32,7 +32,7 @@ namespace Lab5
          *Sent: 2 ints (min and max)
          *Return: int
          *This function genrate random number between the mentioned range*/
-        private int GetRandom(string min, int max)
+        private int GetRandom(int min, int max)
         {
             //create random object with no seed value
             Random rand = new Random();
@@ -181,7 +181,7 @@ namespace Lab5
          *Sent: 2 strings
          *Return: none
          *This function swap strings*/
-        private void Swap(string text1, string text$)
+        private void Swap(string text1, string text2)
         {
             string temp = text1;
             text1=text2;
@@ -271,7 +271,7 @@ namespace Lab5
                 sum = sum + number;
                 count--;    
             }
-            return;
+            return sum;
         }
         //10b.create function CountOdd
         //function CountOdd
